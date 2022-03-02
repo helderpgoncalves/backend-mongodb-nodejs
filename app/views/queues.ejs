@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<main>
+    <div class="jumbotron">
+        <h1>Pizzas Queues</h1>
+    </div>
+
+    <table>
+        <tr>
+           <th>Name</th><th>State</th><th>Sauce</th><th>Vegetable</th><th>Meat</th>
+        </tr>
+     
+        <% for (var i = 0; i < pizza.length; /* I save the data in a variable 'quotation', I don't know how you named your variable  */  i++) { %>
+         <tr>
+           <td><%= pizza[i].name %></td>
+           <td><%= pizza[i].state %></td>
+           <td><%= pizza[i].sauce %></td>
+           <td><%= pizza[i].vegetable %></td>
+           <td><%= pizza[i].meat %></td>
+         </tr>    
+        <% } %>
+     </table>
+</main>
+</body>
+</html>
